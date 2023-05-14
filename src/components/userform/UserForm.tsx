@@ -16,10 +16,9 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit }) => {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group controlId="username">
-        <Form.Label>GitHub Username</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Enter username"
+          placeholder="Search By: Username or Language"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />

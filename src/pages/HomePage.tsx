@@ -13,7 +13,11 @@ const HomePage: React.FC = () => {
       const response = await fetch(`https://api.github.com/users/${username}/repos`);
       if (response.ok) {
         const data = await response.json();
-        setRepositories(data);
+        const repositoriesWithLanguage = data.map((repo: any) => {
+          const { language } = repo;
+          return { ...repo, language };
+        });
+        setRepositories(repositoriesWithLanguage);
       } else {
         throw new Error('Failed to fetch user repositories');
       }
@@ -21,6 +25,7 @@ const HomePage: React.FC = () => {
       console.error(error);
     }
   };
+  
 
   const handleAddToFavorites = (repository: any) => {
     if (!favorites.some((fav) => fav.id === repository.id)) {
