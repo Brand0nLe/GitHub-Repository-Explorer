@@ -10,11 +10,12 @@
   font-size: 1em;
 }
 
-.searchButton {
+
+.customBtn {
   margin-top: 20px;
   width: 100%;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #800080!important;
   border: none;
   color: white;
   border-radius: 5px;
@@ -22,6 +23,6 @@
   transition: background-color 0.3s ease;
 }
 
-.searchButton {
-  background-color: #0056b3;
+.customBtn:hover {
+  background-color: #600060!important;
 }

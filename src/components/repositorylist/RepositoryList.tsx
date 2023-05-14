@@ -59,7 +59,7 @@ const RepositoryList: React.FC<RepositoryListProps> = ({
             </Card.Text>
             {favorites && (
               <Button
-                className={isFavorite(repo) ? 'btn-custom-danger' : 'btn-custom-primary'}
+                className={isFavorite(repo) ? 'btn-custom-remove' : 'btn-custom-add'}
                 onClick={() => handleFavoriteButtonClick(repo)}
               >
                 {isFavorite(repo) ? 'Remove from Favorites' : 'Add to Favorites'}

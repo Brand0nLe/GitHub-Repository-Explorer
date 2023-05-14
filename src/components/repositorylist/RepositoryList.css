@@ -12,27 +12,24 @@
   margin-bottom: 5px;
 }
 
-.btn-primary {
-  background-color: #00BFFF;
-  color: #FFFFFF;
+.btn-custom-add {
+  background-color: #00BFFF!important;
+  color: #FFFFFF!important;
+  width: 100%
 }
 
-.btn-custom-primary {
-  background-color: #00BFFF;
-  color: #FFFFFF;
+.btn-custom-add:hover {
+  background-color: #008FB3!important;
 }
 
-.btn-custom-primary:hover {
-  background-color: #008FB3;
+.btn-custom-remove {
+  background-color: #FF6347!important;
+  color: #FFFFFF!important;
+  width: 100%;
 }
 
-.btn-custom-danger {
-  background-color: #FF6347;
-  color: #FFFFFF;
-}
-
-.btn-custom-danger:hover {
-  background-color: #B34735;
+.btn-custom-remove:hover {
+  background-color: #B34735!important;
 }
 
 a {
