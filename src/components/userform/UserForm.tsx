@@ -18,7 +18,7 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit }) => {
             <Form.Group controlId="username">
                 <Form.Control
                     type="text"
-                    placeholder="Search By: Username or Language"
+                    placeholder="Enter Username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />

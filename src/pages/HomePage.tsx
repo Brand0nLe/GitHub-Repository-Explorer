@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import UserForm from '../components/userform/UserForm';
 import RepositoryList from '../components/repositorylist/RepositoryList';
-import './HomePage.css';
+import './HomePage.css'; 
 
 const HomePage: React.FC = () => {
   const [repositories, setRepositories] = useState<any[]>([]);
@@ -15,8 +15,7 @@ const HomePage: React.FC = () => {
       if (response.ok) {
         const data = await response.json();
         setUserInfo(data);
-        setRepositories([]); // Clear the previous search results
-        loadUserRepositories(username);
+        fetchUserRepositories(username);
       } else {
         throw new Error('Failed to fetch user information');
       }
@@ -25,7 +24,7 @@ const HomePage: React.FC = () => {
     }
   };
 
-  const loadUserRepositories = async (username: string) => {
+  const fetchUserRepositories = async (username: string) => {
     try {
       const response = await fetch(`https://api.github.com/users/${username}/repos`);
       if (response.ok) {
@@ -49,20 +48,30 @@ const HomePage: React.FC = () => {
     setFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== repository.id));
   };
 
+  const renderUserInfo = () => {
+    if (userInfo) {
+      const { name, location, bio } = userInfo;
+      if (!name && !location && !bio) {
+        return <p>No user information available</p>;
+      }
+      return (
+        <div>
+          <p>Name: {name || 'N/A'}</p>
+          <p>Location: {location || 'N/A'}</p>
+          <p>Bio: {bio || 'N/A'}</p>
+          <p>Public Repositories: {userInfo.public_repos}</p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <Container className="home-page">
       <h1>GitHub Repository Explorer</h1>
       <UserForm onSubmit={handleFormSubmit} />
       <hr />
-      {userInfo && (
-        <div className="user-info">
-          <h3>Username: {userInfo.login}</h3>
-          <p>Name: {userInfo.name}</p>
-    <p>Bio: {userInfo.bio}</p>
-    <p>Location: {userInfo.location}</p>
-    <p>Public Repositories: {userInfo.public_repos}</p>
-        </div>
-      )}
+      <div className="user-info">{renderUserInfo()}</div>
       <div className="home-page-content">
         <div className="repository-list">
           <h2>Search Results</h2>
