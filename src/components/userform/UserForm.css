@@ -1,11 +1,27 @@
 .form-group {
-    margin-bottom: 10px;
-  }
-  
-  .form-label {
-    font-weight: bold;
-  }
-  
-  .form-button {
-    margin-top: 10px;
-  }
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group .form-control {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 1em;
+}
+
+.btn-primary {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
