@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import UserForm from '../components/userform/UserForm';
 import RepositoryList from '../components/repositorylist/RepositoryList';
-
-import './HomePage.css'; // Import the CSS file for HomePage styling
+import './HomePage.css';
 
 const HomePage: React.FC = () => {
   const [repositories, setRepositories] = useState<any[]>([]);
@@ -23,14 +22,16 @@ const HomePage: React.FC = () => {
     }
   };
 
-  const handleBookmark = (repository: any) => {
-    if (!favorites.includes(repository)) {
+  const handleAddToFavorites = (repository: any) => {
+    if (!favorites.some((fav) => fav.id === repository.id)) {
       setFavorites((prevFavorites) => [...prevFavorites, repository]);
     }
   };
 
-  const handleRemoveFavorite = (repository: any) => {
-    setFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== repository.id));
+  const handleRemoveFromFavorites = (repository: any) => {
+    setFavorites((prevFavorites) =>
+      prevFavorites.filter((fav) => fav.full_name !== repository.full_name)
+    );
   };
 
   return (
@@ -41,11 +42,21 @@ const HomePage: React.FC = () => {
       <div className="home-page-content">
         <div className="repository-list">
           <h2>Search Results</h2>
-          <RepositoryList repositories={repositories} onBookmark={handleBookmark} />
+          <RepositoryList
+            repositories={repositories}
+            favorites={favorites}
+            onAddToFavorites={handleAddToFavorites}
+            onRemoveFromFavorites={handleRemoveFromFavorites}
+          />
         </div>
         <div className="favorites">
           <h2>Favorite Repositories</h2>
-          <RepositoryList repositories={favorites} onBookmark={handleRemoveFavorite} />
+          <RepositoryList
+            repositories={favorites}
+            favorites={favorites}
+            onAddToFavorites={handleAddToFavorites}
+            onRemoveFromFavorites={handleRemoveFromFavorites}
+          />
         </div>
       </div>
     </Container>
