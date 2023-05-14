@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import UserForm from '../components/userform/UserForm';
 import RepositoryList from '../components/repositorylist/RepositoryList';
-import './HomePage.css'; 
+import './HomePage.css';
 
 const HomePage: React.FC = () => {
   const [repositories, setRepositories] = useState<any[]>([]);
-  const [favorites, setFavorites] = useState<any[]>([]);
   const [userInfo, setUserInfo] = useState<any>(null);
+  const [favorites, setFavorites] = useState<any[]>(() => {
+    const storedFavorites = localStorage.getItem('favorites');
+    return storedFavorites ? JSON.parse(storedFavorites) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
 
   const handleFormSubmit = async (username: string) => {
     try {
