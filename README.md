@@ -1,6 +1,6 @@
-# GitHub Explorer
+# GitHub Repository Explorer
 
-GitHub Explorer is a repository search application built with React, Bootstrap, and TypeScript. It allows users to search for repositories based on a specific GitHub user's profile. The application utilizes the GitHub REST API to fetch repository data and display details such as repository name, description, stars, and forks. You can also save your favorite repositories.
+GitHub Repository Explorer is a repository search application built with React, Bootstrap, and TypeScript. It allows users to search for repositories based on a specific GitHub user's profile. The application utilizes the GitHub REST API to fetch repository data and display details such as repository name, description, stars, and forks. You can also save your favorite repositories.
 
 **Check out the deployed application [here](https://githubexplorer.azurewebsites.net/).**
 
@@ -33,7 +33,7 @@ To run this project, follow these steps:
 
 ## Disclaimer
 
-This project, GitHub Explorer, is a personal and educational endeavor. It uses the GitHub REST API (https://docs.github.com/en/rest) to fetch and display data but is not affiliated with or endorsed by GitHub Inc. This project is purely for the purpose of practicing and developing my skills in front-end development, with a focus on React.js and TypeScript. It is also an exercise in learning to integrate and use third-party APIs. All repository information is provided by the GitHub REST API, and this application claims no ownership or responsibility for this data.
+This project, GitHub Repository Explorer, is a personal and educational endeavor. It uses the GitHub REST API (https://docs.github.com/en/rest) to fetch and display data but is not affiliated with or endorsed by GitHub Inc. This project is purely for the purpose of practicing and developing my skills in front-end development, with a focus on React.js and TypeScript. It is also an exercise in learning to integrate and use third-party APIs. All repository information is provided by the GitHub REST API, and this application claims no ownership or responsibility for this data.
 
 ## Contact
 
