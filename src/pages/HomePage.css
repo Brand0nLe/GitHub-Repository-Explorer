@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../components/assets/Roboto-Regular.ttf);
+}
 body {
-    background-color:aliceblue !important;
+    background-color:#E8F0FF !important;
     color: black !important;
+    font-family: Roboto !important;
 }
 
 .home-page {
