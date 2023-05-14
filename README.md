@@ -10,7 +10,7 @@ GitHub Explorer is a repository search application built with React, Bootstrap, 
 - Display of repository details including name, description, language, stars, and forks
 - Displays user bio information if it's been filled out (Name, Location, Bio and # of Public Repositories
 - Provides a placeholder message for missing info
-- Bookmarking functionality to save favorite repositories
+- Local Storage used to save favorite repositories
 - Responsive design that adapts to different screen sizes and devices
 
 ## Technologies Used
