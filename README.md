@@ -2,7 +2,7 @@
 
 GitHub Explorer is a repository search application built with React, Bootstrap, and TypeScript. It allows users to search for repositories based on a specific GitHub user's profile. The application utilizes the GitHub REST API to fetch repository data and display details such as repository name, description, stars, and forks. You can also save your favorite repositories.
 
-**Check out the deployed application [Coming Soon...](https://urlgoeshere.azurewebsites.net/).**
+**Check out the deployed application [here]([https://githubexplorer.azurewebsites.net/]).**
 
 ## Features
 
@@ -37,10 +37,10 @@ This project, GitHub Explorer, is a personal and educational endeavor. It uses t
 
 ## Contact
 
-If you have any questions or feedback about this project, feel free to contact me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or feedback about this project, feel free to contact me at [brandonctle.dev@gmail.com](mailto:brandonctle.dev@gmail.com).
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/your-linkedin) to stay updated on my latest projects and professional profile.
+Connect with me on [LinkedIn](https://www.linkedin.com/in/brandonctle/) to stay updated on my latest projects and professional profile.
 
-You can also visit my portfolio website at [https://www.yourportfolio.com](https://www.yourportfolio.com).
+You can also visit my portfolio website at [https://www.brandonle.azurewebsites.net](https://www.brandonle.azurewebsites.net).
 
 Thanks for visiting!
