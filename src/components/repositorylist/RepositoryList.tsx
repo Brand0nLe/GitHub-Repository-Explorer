@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 interface RepositoryListProps {
   repositories: any[];
+  onBookmark: (repository: any) => void;
 }
 
-const RepositoryList: React.FC<RepositoryListProps> = ({ repositories }) => {
+const RepositoryList: React.FC<RepositoryListProps> = ({ repositories, onBookmark }) => {
+  const handleBookmark = (repository: any) => {
+    onBookmark(repository);
+  };
+
   return (
     <div>
       {repositories.map((repo: any) => (
@@ -16,6 +22,9 @@ const RepositoryList: React.FC<RepositoryListProps> = ({ repositories }) => {
             <Card.Text>
               Stars: {repo.stargazers_count} | Forks: {repo.forks_count}
             </Card.Text>
+            <Button variant="primary" onClick={() => handleBookmark(repo)}>
+              Bookmark
+            </Button>
           </Card.Body>
         </Card>
       ))}

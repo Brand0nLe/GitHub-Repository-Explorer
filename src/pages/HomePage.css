@@ -1,0 +1,20 @@
+.home-page {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .home-page-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .repository-list {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .favorites {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
