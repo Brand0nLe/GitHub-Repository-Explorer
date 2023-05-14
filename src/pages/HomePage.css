@@ -1,20 +1,38 @@
 .home-page {
     margin-top: 50px;
     text-align: center;
-  }
-  
-  .home-page-content {
+}
+
+.home-page-content {
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .repository-list {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .favorites {
-    flex: 1;
-    margin-left: 20px;
-  }
-  
+    flex-direction: column;
+    align-items: center;
+}
+
+.repository-list,
+.favorites {
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .home-page-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
+    .repository-list,
+    .favorites {
+        width: 45%; /* reduced from 50% to account for the margins */
+        margin: 0;
+    }
+
+    .repository-list {
+        margin-right: 20px;
+    }
+
+    .favorites {
+        margin-left: 20px;
+    }
+}
