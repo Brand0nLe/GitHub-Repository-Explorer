@@ -24,7 +24,7 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit }) => {
                     onChange={(e) => setUsername(e.target.value)}
                 />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" className="searchButton">
                 Search
             </Button>
         </Form>

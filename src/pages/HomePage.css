@@ -1,3 +1,9 @@
+body {
+    height: 100%;
+    background-color: #F5F5F5 !important;
+    color: #696969 !important;
+}
+
 .home-page {
     margin-top: 50px;
     text-align: center;
@@ -19,12 +25,11 @@
     .home-page-content {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start; 
+        align-items: flex-start;
     }
 
     .repository-list,
     .favorites {
-        width: 45%; /* reduced from 50% to account for the margins */
         margin: 0;
     }
 

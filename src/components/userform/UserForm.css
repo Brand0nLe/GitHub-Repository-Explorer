@@ -10,7 +10,7 @@
   font-size: 1em;
 }
 
-.btn-primary {
+.searchButton {
   margin-top: 20px;
   width: 100%;
   padding: 10px 20px;
@@ -22,6 +22,6 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
+.searchButton {
   background-color: #0056b3;
 }
