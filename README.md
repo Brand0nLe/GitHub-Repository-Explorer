@@ -1,6 +1,6 @@
 # GitHub Repository Explorer
 
-GitHub Repository Explorer is a repository search application built with React, Bootstrap, and TypeScript. It allows users to search for repositories based on a specific GitHub user's profile. The application utilizes the GitHub REST API to fetch repository data and display details such as repository name, description, stars, and forks. You can also save your favorite repositories.
+GitHub Repository Explorer is a repository search application built with React, Bootstrap, and TypeScript. It allows users to search for repositories based on a specific GitHub user's profile name. The application utilizes the GitHub REST API to fetch repository data and display details such as repository name, description, stars, and forks. You can also save your favorite repositories.
 
 **Check out the deployed application [here](https://githubexplorer.azurewebsites.net/).**
 
