@@ -34,13 +34,12 @@ To run this project, follow these steps:
 ## Disclaimer
 
 This project, GitHub Repository Explorer, is a personal and educational endeavor. It uses the GitHub REST API (https://docs.github.com/en/rest) to fetch and display data but is not affiliated with or endorsed by GitHub Inc. This project is purely for the purpose of practicing and developing my skills in front-end development, with a focus on React.js and TypeScript. It is also an exercise in learning to integrate and use third-party APIs. All repository information is provided by the GitHub REST API, and this application claims no ownership or responsibility for this data.
-
 ## Contact
 
-If you have any questions or feedback about this project, feel free to contact me at [brandonctle.dev@gmail.com](mailto:brandonctle.dev@gmail.com).
+If you have any questions or would like to know more about the project, feel free to reach out to me.
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/brandonctle/) to stay updated on my latest projects and professional profile.
+- Email: [brandonctle.dev@gmail.com](mailto:brandonctle.dev@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/brandonctle](https://www.linkedin.com/in/brandonctle/)
+- Portfolio: [https://brandonle.azurewebsites.net](https://brandonle.azurewebsites.net/)
 
-You can also [visit my portfolio website](https://brandonle.azurewebsites.net/).
-
-Thanks for visiting!
+Thank you for your interest in my project!
