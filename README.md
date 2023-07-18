@@ -5,7 +5,8 @@ GitHub Repository Explorer is a repository search application built with React, 
 ## Deployment
 
 The application is deployed on Azure and can be accessed using the following link:
-[GitHub Repository Explorer](https://githubexplorer.azurewebsites.net/)
+[GitHub Repository Explorer Currently Unavailable](https://githubexplorer.azurewebsites.net/)
+Azure links unavailable at the moment. I'm sorry for the inconvenience, but please be patient and I'll have this re-hosted soon. Thank you!
 
 ## Features
 
